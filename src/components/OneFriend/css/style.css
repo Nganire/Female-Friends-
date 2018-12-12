@@ -1,0 +1,26 @@
+#OneUser {
+    padding: 150px 50px 50px 50px;
+    width: 80%;
+    margin-left: 7%;
+}
+
+#oneimage {
+    width: 45%;
+    padding: 3%;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 1rem;
+    vertical-align: top;
+}
+#OneUsername, #OneUsercity {
+    display: block;
+    padding: 10px;
+}
+
+#OneUsername {
+    font-size: 3rem;
+}
+
+.leftOne {
+    padding-left: 5%;
+    display: inline-block;
+}

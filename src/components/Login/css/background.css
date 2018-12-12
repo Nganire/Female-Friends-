@@ -1,0 +1,60 @@
+.background {
+   background-image: url("../../../img/woman2.jpg");
+   background-repeat: no-repeat;
+   background-size: 100% auto;
+   opacity: 0.8;
+   max-width: 100%;
+   font-family: 'Open Sans', sans-serif;
+}
+
+.loginCard {
+    vertical-align: middle;
+    display: block;
+    padding: 100px;
+}
+
+#logcard {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+#loginBut {
+    background-color: #78b8b3;
+    border-radius: 10px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.formContainer {
+    padding-top: 100px;
+}
+
+.RegCard {
+    vertical-align: middle;
+    display: block;
+    padding: 3% 100px 10% 100px;
+}
+
+#row1, #row2, #row3 {
+    margin-bottom: 0;
+}
+
+.card h4 {
+    text-align: center;
+}
+
+#formcard {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+#terms {
+    text-align: center;
+}

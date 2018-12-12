@@ -1,0 +1,15 @@
+.RegBackground {
+    background-image: url("../../../img/woman2.jpg");
+    background-repeat: no-repeat;    
+    background-size: 100% 100%;    
+    opacity: 0.8;
+    max-width: 100%;
+    height: 700px;
+}
+
+.RegCard {
+    vertical-align: middle;
+    display: block;
+    padding: 15px;
+   
+}

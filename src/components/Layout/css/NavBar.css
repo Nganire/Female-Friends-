@@ -1,0 +1,7 @@
+#Navbar {
+    background:rgb(120, 184, 179);
+    font-family: 'Open Sans', sans-serif;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}

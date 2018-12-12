@@ -1,0 +1,40 @@
+#newCard {
+    width: 100%;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 3%;
+}
+
+.postfooterBy {
+    text-align: left;
+    float: left;
+    padding-left: 10Px;
+    display: inline;
+}
+
+.postfooterComment {
+    float: right;
+    display: inline;
+    padding-right: 10px;
+}
+
+.CardFooter {
+    padding: 20px;
+    background-color: rgb(232, 240, 239);
+}
+
+.card a {
+    color: rgb(116, 116, 116);
+}
+#shareChallenge {
+    text-align: left;
+}
+
+textarea {
+    height: auto;
+}
+
+#newPostBtn {
+    float: right;
+}

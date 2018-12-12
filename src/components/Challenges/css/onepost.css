@@ -1,0 +1,37 @@
+#oneCard {
+    text-align: justify;
+    padding: 10px;
+    border-radius: 1rem 1rem;
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.postfooterBy {
+    text-align: left;
+    float: left;
+    padding-left: 10Px;
+    display: inline;
+}
+
+.postfooterComment {
+    float: right;
+    display: inline;
+    padding-right: 10px;
+}
+
+.CardFooter {
+    background-color: rgb(232, 240, 239);
+}
+
+.card a {
+    color: rgb(116, 116, 116);
+}
+
+#CardTitle {
+    text-align: left;
+}
+
+.post {
+    width: 100%;
+    margin: 0 auto;
+}

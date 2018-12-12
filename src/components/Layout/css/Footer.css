@@ -1,0 +1,22 @@
+#footer{
+    display:inline-block;
+    vertical-align: top;
+}
+
+.row {
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.widget h4, .textwidget p, .menu-footer-menu-container {
+    text-align: center;
+}
+
+.menu-footer-menu-container ul {
+    padding-left: 0;
+}
