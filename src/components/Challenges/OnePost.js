@@ -13,7 +13,7 @@ export default class Posts extends Component {
     };
 
     componentDidMount() {
-        Axios.get(`http://localhost:8000/api/comment/countcomments/${this.props.data._id}`).then(res => this.setState( {count: res.data} ));
+        Axios.get(` https://desolate-headland-87103.herokuapp.com/api/comment/countcomments/${this.props.data._id}`).then(res => this.setState( {count: res.data} ));
     };
 
     render() {

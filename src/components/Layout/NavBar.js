@@ -13,7 +13,7 @@ class NavBar extends React.Component {
     };
 
     handleButton = e => {
-        Axios.get('http://localhost:8000/api/user/logout')
+        Axios.get(' https://desolate-headland-87103.herokuapp.com/api/user/logout')
         .then(res => {this.props.history.push('/login')})
     }
 

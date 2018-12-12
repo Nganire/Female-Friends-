@@ -13,7 +13,7 @@ class TopMembers extends Component {
     }
 
     componentDidMount() {
-        Axios.get('http://localhost:8000/api/user/top').then(res => this.setState( {top: res.data} ));
+        Axios.get(' https://desolate-headland-87103.herokuapp.com/api/user/top').then(res => this.setState( {top: res.data} ));
     };
 
     render() {

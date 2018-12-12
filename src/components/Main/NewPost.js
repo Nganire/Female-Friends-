@@ -24,7 +24,7 @@ export default class NewPost extends React.Component {
     handleSubmit = e => {
         e.preventDefault();
 		this.setState({ errors: {} });
-		Axios.post('http://localhost:8000/api/post/addpost', this.state.formData)
+		Axios.post(' https://desolate-headland-87103.herokuapp.com/api/post/addpost', this.state.formData)
 			.then(res => {
                 this.setState({ formData: { title: '', body: ''}});
 			})
