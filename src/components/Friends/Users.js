@@ -15,7 +15,7 @@ export default class Users extends Component {
     }
 
     componentDidMount() {
-        Axios.get('http://localhost:8000/api/user/getall').then(res => this.setState( {users: res.data} ));
+        Axios.get(' https://desolate-headland-87103.herokuapp.com/api/user/getall').then(res => this.setState( {users: res.data} ));
     };
 
     render() {

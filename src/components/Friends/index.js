@@ -13,7 +13,7 @@ export default class Friends extends React.Component {
     }
 
     componentWillMount() {
-        Axios.get('http://localhost:8000/api/user/auth')
+        Axios.get(' https://desolate-headland-87103.herokuapp.com/api/user/auth')
             .then(res => {
                 this.setState({ isLogged: true });
             })
