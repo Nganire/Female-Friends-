@@ -23,7 +23,7 @@ export default class OneChallenge extends React.Component {
     }
 
     componentWillMount() {
-        Axios.get(' https://desolate-headland-87103.herokuapp.com/api/user/auth')
+        Axios.get('http://localhost:8000/api/user/auth')
             .then(res => {
                 this.setState({ isLogged: true });
             })
@@ -42,7 +42,7 @@ export default class OneChallenge extends React.Component {
         e.preventDefault();
         console.log('djbcjsbk');
 		this.setState({ errors: {} });
-		Axios.post(` https://desolate-headland-87103.herokuapp.com/api/comment/addcomment/${this.props.match.params.id}`, this.state.formData)
+		Axios.post(`http://localhost:8000/api/comment/addcomment/${this.props.match.params.id}`, this.state.formData)
 			.then(res => {
                 console.log(res);
                 this.setState({ formData: { comment: ''}});
@@ -53,8 +53,8 @@ export default class OneChallenge extends React.Component {
     }
 
     componentDidMount() {
-        Axios.get(` https://desolate-headland-87103.herokuapp.com/api/post/readmore/${this.props.match.params.id}`).then(res => this.setState( {post: res.data, author: res.data.user, date: res.data.createdAt.slice(0, 10)} ));
-        Axios.get(` https://desolate-headland-87103.herokuapp.com/api/comment/postcomment/${this.props.match.params.id}`).then(res => this.setState( {comments: res.data} ));
+        Axios.get(`http://localhost:8000/api/post/readmore/${this.props.match.params.id}`).then(res => this.setState( {post: res.data, author: res.data.user, date: res.data.createdAt.slice(0, 10)} ));
+        Axios.get(`http://localhost:8000/api/comment/postcomment/${this.props.match.params.id}`).then(res => this.setState( {comments: res.data} ));
     };
 
     render() {

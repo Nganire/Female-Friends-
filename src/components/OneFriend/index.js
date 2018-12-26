@@ -15,7 +15,7 @@ export default class OneFriend extends React.Component {
     }
 
     componentWillMount() {
-        Axios.get(' https://desolate-headland-87103.herokuapp.com/api/user/auth')
+        Axios.get('http://localhost:8000/api/user/auth')
             .then(res => {
                 this.setState({ isLogged: true });
             })
@@ -25,8 +25,8 @@ export default class OneFriend extends React.Component {
     };
 
     componentDidMount() {
-        Axios.get(` https://desolate-headland-87103.herokuapp.com/api/post/getallbyid/${this.props.match.params.id}`).then(res => this.setState( {posts: res.data} ));
-        Axios.get(` https://desolate-headland-87103.herokuapp.com/api/user//friend/${this.props.match.params.id}`).then(res => this.setState( {user: res.data} ));
+        Axios.get(`http://localhost:8000/api/post/getallbyid/${this.props.match.params.id}`).then(res => this.setState( {posts: res.data} ));
+        Axios.get(`http://localhost:8000/api/user//friend/${this.props.match.params.id}`).then(res => this.setState( {user: res.data} ));
     };
 
     render() {

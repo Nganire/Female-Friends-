@@ -22,7 +22,7 @@ class Main extends React.Component {
     };
 
     componentWillMount() {
-        Axios.get(' https://desolate-headland-87103.herokuapp.com/api/user/auth')
+        Axios.get('http://localhost:8000/api/user/auth')
             .then(res => {
                 this.setState({ user: res.data });
             })
@@ -32,7 +32,7 @@ class Main extends React.Component {
     };
 
     componentDidMount() {
-        Axios.get(' https://desolate-headland-87103.herokuapp.com/api/post/getlastposts').then(res => this.setState( {posts: res.data} ));
+        Axios.get('http://localhost:8000/api/post/getlastposts').then(res => this.setState( {posts: res.data} ));
     };
 
     render() {
